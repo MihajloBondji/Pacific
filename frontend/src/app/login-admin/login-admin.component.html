@@ -1,0 +1,20 @@
+<div class="mainLogin">
+    <div class="loginContainer">
+        <div class="loginTitle">ADMIN LOGIN</div>
+        <form>
+        <div class="loginMain">
+            <img src="../../assets/profilepic.png" class="profilepic">
+            <span class="inputSpan">
+                <input type="text" class="loginInput" placeholder="Username" name="username" [(ngModel)]="username" required>
+                <img src="../../assets/miniprofile.svg" class="miniProfile">
+            </span>
+            <span class="inputSpan">
+                <input type="password" class="loginInput" placeholder="Password" name="password" [(ngModel)]="password" required>
+                <img src="../../assets/key.svg" class="miniProfile">
+                </span>
+            <button class="loginButton2" (click)='login()' type="submit">LOG IN</button>
+            <span class="message">{{message}}</span>
+        </div>
+        </form>
+    </div>
+</div>

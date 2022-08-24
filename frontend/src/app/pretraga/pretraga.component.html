@@ -1,0 +1,43 @@
+<div class="main2">
+
+<table class="booksTable">
+    <tr class="tabhead">
+        <th>Cover</th>
+        <th>Title</th>
+        <th>Authors</th>
+        <th class="forh">Genres
+            <select name="genres" class="dispnone" id="genres" multiple [(ngModel)]="selected" (change)="changeGanres()">
+                <option *ngFor="let g of genres" value="g" [ngValue]="g">{{g}}</option>
+            </select></th>
+        <th class="forh">Publisher
+            <select name="publishers" class="dispnone" id="publishers" multiple [(ngModel)]="selectedp" (change)="changePublishers()">
+                <option *ngFor="let p of publishers" value="p" [ngValue]="p">{{p}}</option>
+            </select>
+        </th>
+        <th class="forh">Year
+            <input name="yearfrom" [(ngModel)]="yearfrom" (change)="changeYears()" class="dispnone">
+            <input name="yearto" [(ngModel)]="yearto" (change)="changeYears()" class="dispnone">
+        </th>
+        <th>Language</th>
+    </tr>
+    <tbody>
+        <tr *ngFor='let u of allBooksToShow | slice: (page1-1) * 10 : (page1-1) * 10 + 10' (click)="preusmeri('user/book-page',u.id)" class="forhover">
+            <th><img src="../../assets/books/{{u.cover}}" class="bookCover"></th>
+            <th>{{u.title}}</th>
+            <th>{{u.author}}</th>
+            <th>{{u.genre}}</th>
+            <th>{{u.publisher}}</th>
+            <th>{{u.year}}</th>
+            <th>{{u.language}}</th> </tr>
+
+        <tr>
+            <th colspan="7" style="text-align:center">
+                <span class="center">
+                <ngb-pagination [(page)]="page1" [pageSize]="10" [collectionSize]="allBooksToShow.length">
+                </ngb-pagination>
+                </span>
+            </th>
+        </tr>
+    </tbody>
+</table>
+</div>

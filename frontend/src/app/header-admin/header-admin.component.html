@@ -1,0 +1,19 @@
+<div class="headerUpper" id="headerUpper">
+    <div class="headerUpperLogo">
+        <img src="assets/pacific_horizontal.png" class="logoHorizontal" (click)="preusmeri('pocetna-admin')">
+    </div>
+    <div class="headerUpperMain">
+        <div class="headerLogin">
+            <div class="loginButton" onmouseover="document.getElementById('headerUpper').classList.add('headerAnimation')" onmouseout="document.getElementById('headerUpper').classList.remove('headerAnimation')" (click)="odjava()">Logout</div>				
+        </div>
+    </div>
+</div>
+
+<div class="headerLower">
+    <span class="linksHolder" id="linksHolder">
+        <a class="headerLinks" (click)="preusmeri('dodaj-korisnika')"><span class="linija"></span><span>Add user</span></a>
+        <a class="headerLinks" (click)="preusmeri('uredi-korisnike')"><span class="linija"></span><span>Edit users</span></a>
+        <a class="headerLinks" (click)="preusmeri('dodaj-knjigu')"><span class="linija"></span><span>Add book</span></a>
+        <a class="headerLinks" (click)="preusmeri('uredi-knjige')"><span class="linija"></span><span>Edit books</span></a>
+    </span>
+</div>

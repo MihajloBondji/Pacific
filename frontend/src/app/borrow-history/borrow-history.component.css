@@ -1,0 +1,71 @@
+
+.booksTable {
+    margin: 3vw;
+}
+
+table {
+    display: inline-table;
+    width: 94vw;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1vw;
+}
+
+th {
+    padding: 0.5vw;
+    text-align: left;
+    font-family: poppins;
+}
+
+.tabhead {
+    background-color:#2F7998;
+    color: white;
+}
+
+tr {
+    border-bottom: solid 1px #ddd;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputType{
+    width:2vw;
+    text-align: center;
+}
+.trash{
+    cursor: pointer;
+}
+.trash:hover{
+    fill:red;
+}
+
+.bookCover{
+    height: 4vw;
+    max-height: 100px;
+}
+
+.forhover{
+    cursor: pointer;
+}
+.forhover:hover{
+    background-color: aliceblue;
+}
+
+.forhover2{
+    cursor: pointer;
+}
+.forhover2:hover{
+    background-color: #4893b3;
+}
+
+
+@media screen and (max-width:600px){
+    .booksTable{
+      font-size: 2.5vw;
+    }
+  }

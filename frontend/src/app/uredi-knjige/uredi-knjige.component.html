@@ -1,0 +1,40 @@
+<table class="booksTable">
+    <tr class="tabhead">
+        <th>ID</th>
+        <th>Cover</th>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Genres</th>
+        <th>Publisher</th>
+        <th>Year</th>
+        <th>Language</th>
+        <th style="text-align: center;">Delete</th>
+    </tr>
+    <tbody>
+        <tr *ngFor='let u of allBooks | slice: (page1-1) * 10 : (page1-1) * 10 + 10' (click)="uredi(u.id)" class="forhover">
+            <th>{{u.id}}</th>
+            <th><img src="../../assets/books/{{u.cover}}" class="bookCover"></th>
+            <th>{{u.title}}</th>
+            <th>{{u.author}}</th>
+            <th>{{u.genre}}</th>
+            <th>{{u.publisher}}</th>
+            <th>{{u.year}}</th>
+            <th>{{u.language}}</th>
+            <th style="text-align: center;"><svg (click)="delete(u.id)" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="trash"><path d="M19 24h-14c-1.104 0-2-.896-2-2v-17h-1v-2h6v-1.5c0-.827.673-1.5 1.5-1.5h5c.825 0 1.5.671 1.5 1.5v1.5h6v2h-1v17c0 1.104-.896 2-2 2zm0-19h-14v16.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-16.5zm-9 4c0-.552-.448-1-1-1s-1 .448-1 1v9c0 .552.448 1 1 1s1-.448 1-1v-9zm6 0c0-.552-.448-1-1-1s-1 .448-1 1v9c0 .552.448 1 1 1s1-.448 1-1v-9zm-2-7h-4v1h4v-1z"/></svg></th>
+        </tr>
+
+        <tr>
+            <th colspan="9" style="text-align:center">
+                <span class="center">
+                <ngb-pagination [(page)]="page1" [pageSize]="10" [collectionSize]="allBooks.length">
+                </ngb-pagination>
+                </span>
+            </th>
+        </tr>
+    </tbody>
+</table>
+
+<div class="daysHolder">
+    <input class="editInput" type="text" [(ngModel)]="days" name="days" ngDefaultControl><br>
+    <button class="loginButton2" (click)='saveThis()'>Save</button><br>
+</div>

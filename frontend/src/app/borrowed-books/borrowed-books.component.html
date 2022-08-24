@@ -1,0 +1,21 @@
+
+    <div class="container">
+        <div class="bookCard" *ngFor='let u of allBorrows'>
+            <img src="../../assets/books/{{u.cover}}" class="cover" (click)="preusmeri('user/book-page',u.bookId)">
+            <div class="text">
+                <div class="text-left">
+                    {{u.title}}<br>
+                    {{u.author}}
+                </div>
+                <div class="text-right">
+                    <span *ngIf="calc(u.dateTake,u.extend)>=0" class="available">Days left: {{calc(u.dateTake,u.extend)}}</span>
+                    <span *ngIf="calc(u.dateTake,u.extend)<0" class="notavailable">Days Late: {{-calc(u.dateTake,u.extend)}}</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="loginButton2" (click)='return(u.id,u.bookId)'>Return</button>
+                <button class="loginButton2" (click)='extend(u.id)' *ngIf="u.extend==0">Extend</button>
+            </div>
+        </div>
+        <div class="noBorrows" *ngIf="allBorrows.length==0">You don't have any borrowed books yet.</div>
+    </div>

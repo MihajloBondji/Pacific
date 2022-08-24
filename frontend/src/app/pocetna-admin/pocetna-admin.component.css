@@ -1,0 +1,14 @@
+
+.quote{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px){
+
+    .quoteText{
+        font-size: 6vw;
+    }
+}

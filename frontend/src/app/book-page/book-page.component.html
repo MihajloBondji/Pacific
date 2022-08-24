@@ -1,0 +1,72 @@
+ <div class="container">
+        <div class="slideshow">
+            <span class="flexSlider">
+                <img src="../../assets/books/{{cover}}" *ngIf="edit==0" class="knjiga" id="knjiga">
+                <div class="slideshowText" *ngIf="edit==0">
+                    <span id="title">{{title}}</span><br>
+                    <span id="author">{{author}}</span><br>
+                    <span id="genre">{{genre}}</span><br>
+                    <span id="publisher">{{publisher}}</span><br>
+                    <span id="year">{{year}}</span><br>
+                    <span id="language">{{language}}</span><br>
+                    <span id="score" class="score">{{score}}</span><br>
+                    <span id="score2" class="score2"></span>
+                </div>
+                <span>
+                    <label for="file-input">
+                        <img src="../../assets/books/{{cover}}" class="knjiga curpoint" id="knjiga" *ngIf="edit==1" [(ngModel)]="cover" name="cover" ngDefaultControl>
+                    </label>
+                
+                    <input id="file-input" #fileInput type="file" (change)="onFileUpload2()" style="display:none"/>
+                </span>
+                <div class="slideshowText" *ngIf="edit==1">
+                    <input class="editInput" type="text" [(ngModel)]="title" name="title" ngDefaultControl><br>
+                    <input class="editInput" type="text" [(ngModel)]="author" name="author" ngDefaultControl><br>
+                    <input class="editInput" type="text" [(ngModel)]="genre" name="genre" ngDefaultControl><br>
+                    <input class="editInput" type="text" [(ngModel)]="publisher" name="publisher" ngDefaultControl><br>
+                    <input class="editInput" type="text" [(ngModel)]="year" name="year" ngDefaultControl><br>
+                    <input class="editInput" type="text" [(ngModel)]="language" name="language" ngDefaultControl><br>
+                </div>
+            </span>
+        </div>
+        <div class="right">
+            <span *ngIf="available>0" class="available" id="available">Available:{{available}}</span>
+            <span *ngIf="available==0" class="notAvailable">Not available</span><br>
+            <input class="editInput" type="text" [(ngModel)]="available" name="available" ngDefaultControl *ngIf="edit==1"><br>
+            <span *ngIf="buttonEnable==0" class="notAvailable">You can't get this book</span><br>
+            <button *ngIf="(userType==2||userType==10)&&edit==0" class="loginButton2" (click)='editThis()'>Edit</button>
+            <button *ngIf="(userType==2||userType==10)&&edit==1" class="loginButton2" (click)='saveThis()'>Save</button><br>
+            <button *ngIf="available>0&&buttonEnable" class="loginButton2" (click)='getit()'>Get it!</button>
+            <button *ngIf="available==0&&buttonEnable" class="loginButton2" (click)='reserveit()'>Reserve it!</button>
+        </div>
+    </div>
+
+    <div class="container con2" *ngIf="alreadyReviewed&&userTook">
+        <select class="scoreInput" [(ngModel)]="scoreInput">
+            <option *ngFor="let in of counter(10) ;let i = index" value="{{i+1}}">{{i+1}}</option>
+        </select>
+        <textarea class="textInput" maxlength="1000" [(ngModel)]="textInput" rows="5" cols="20" placeholder="Review up to 1000 characters"></textarea>
+        <button class="loginButton2" (click)="addReview()">Add review</button>
+    </div>
+
+    <div class="container con2" *ngIf="alreadyReviewed==0&&userTook">
+        <select class="scoreInput" [(ngModel)]="userReview.score">
+            <option *ngFor="let in of counter(10) ;let i = index" value="{{i+1}}">{{i+1}}</option>
+        </select>
+        <textarea class="textInput" maxlength="1000" [(ngModel)]="userReview.text" rows="5" cols="20" placeholder="Review up to 1000 characters"></textarea>
+        <button class="loginButton2" (click)="updateReview()">Update review</button>
+    </div>
+
+    <div class="container3">
+        <div *ngIf="allReviews.length==0">There are no reviews for this book yet.</div>
+        <div class="bookCard" *ngFor='let u of allReviews.slice().reverse()'>
+            <div class="text2">
+                <span class="score2" *ngFor="let in of counter(u.score)">&#9734;</span><br>
+                
+                <span class="user">{{u.user}}</span><br><br>
+                {{u.text}}<br>
+
+                <div class="date">{{convert(u.date)}}<br>{{convert2(u.date)}}</div>
+            </div>
+        </div>
+    </div>

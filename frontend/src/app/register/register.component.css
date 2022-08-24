@@ -1,0 +1,201 @@
+.mainLogin{
+    position: relative;
+    margin:5vw 0 0 0;
+    padding: 0;
+    min-height:60vw;
+    width: 100%;
+    background-color: aliceblue;
+    padding-bottom: 5vh;
+}
+
+.loginContainer{
+    position: absolute;
+    top:5vw;
+    left:20vw;
+    height:33vw;
+    width:60vw;
+    background-color: white;
+    background: url(../../assets/loginbackground.png) no-repeat;
+    background-position: bottom;
+    background-size: 100% auto;
+    border-radius: 1vw;
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+    text-align: center;
+}
+
+.registerContainer{
+    height:50vw;
+}
+
+.loginMain{
+    position: absolute;
+    padding:0;
+    top:0;
+    right:0;
+    width:50%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.loginTitle{
+    height:auto;
+    padding: 1.5vw;
+    width: auto;
+    max-width: fit-content;
+    background-color: #2F7998;
+    border-radius: 1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: gothic;
+    position: relative;
+    margin:-3vw auto 0 auto;
+}
+
+.profilepic{
+    height:6vw;
+    width: 6vw;
+    margin-bottom: 2vw;
+}
+
+.curpoint{
+    cursor: pointer;
+}
+
+.curpoint:hover{
+    filter: saturate(2);
+}
+
+.loginInput{
+    outline: none;
+    border:none;
+    width:80%;
+    height:2.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color:#2F7998;
+    font-family: montserrat;
+}
+
+.inputSpan{
+    width:60%;
+    height: auto;
+    text-align: left;
+    border-bottom: solid #2F7998 0.15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputSpan:hover{
+    border-bottom:solid #4CA4C7 0.2vw;
+}
+
+.miniProfile{
+    height:1.3vw;
+    margin-right: 0.5vw;
+}
+
+.loginButton2{
+    border-radius: 50px;
+    height:auto;
+    width:60%;
+    background-color: #2F7998;
+    margin-top: 1vw;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    color:white;
+    border:none;
+    transition:border-color ease 0.3s,color ease 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginButton2:hover{
+    background-color: white;
+    color:#2F7998;
+    border:solid 0.2vw #2F7998;
+    padding:0.80vw;
+    -webkit-box-shadow: 0px 7px 21px -10px #4CA4C7; 
+    box-shadow: 0px 7px 21px -10px #4CA4C7;
+}
+
+.registerButton{
+    color:#2F7998;
+    font-size: 1vw;
+    background-color: transparent;
+    border: none;
+    margin-top: 1vw;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: montserrat;
+}
+
+.registerButton:hover{
+    color:#4CA4C7;
+    text-decoration: underline;
+}
+
+.invalid{
+    border-color: red;
+}
+
+.message{
+    font-weight: bold;
+    color:red;
+    margin-top: 1vw;
+    font-size: 0.7vw;
+    font-family: montserrat;
+    line-height: 0.5em;
+}
+
+@media screen and (max-width:600px){
+    .loginContainer{
+        top:10vw;
+        background: white;
+        width:90vw;
+        left:5vw;
+        height:120vw;
+    }
+    .registerContainer{
+        height:120vw;
+    }
+
+    .mainLogin{
+        margin-top: 10vw;
+        height: 150vw;
+    }
+
+    .loginMain{
+        width: 100%;
+        height: 100%;
+    }
+
+    .profilepic{
+        height: 15vw;
+        width: 15vw;
+    }
+
+    .loginInput{
+        font-size: 4vw;
+        height: 6vw;
+    }
+
+    .miniProfile{
+        height:4vw;
+    }
+
+    .loginButton2{
+        font-size: 4vw;
+    }
+
+    .registerButton{
+        font-size: 4vw;
+    }
+}

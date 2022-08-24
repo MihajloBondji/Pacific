@@ -1,0 +1,29 @@
+<div class="mainLogin">
+    <div class="loginContainer registerContainer">
+        <div class="loginTitle">ADD BOOK</div>
+        <form [formGroup]="registerForm" (ngSubmit)="add()">
+        <div class="loginMain">
+            <span>
+                <label for="file-input">
+                    <img src="../../assets/books/template.jpg" class="profilepic curpoint" id="profilePhoto">
+                </label>
+            
+                <input id="file-input" #fileInput type="file" (change)="onFileUpload2()" style="display:none"/>
+            </span>
+            <span class="inputSpan" [class.invalid]="registerForm.get('title').touched && registerForm.get('title').invalid"><input type="text" class="loginInput" placeholder="Title" name='title' formControlName="title" required></span>
+
+            <span class="inputSpan" [class.invalid]="registerForm.get('author').touched && registerForm.get('author').invalid"><input type="text" class="loginInput" placeholder="Author" name='author' formControlName="author" required></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('genre').touched && registerForm.get('genre').invalid"><input type="text" class="loginInput" placeholder="Genre" name='genre' formControlName="genre" required></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('publisher').touched && registerForm.get('publisher').invalid"><input type="text" class="loginInput" placeholder="Publisher" name='publisher' formControlName="publisher" required></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('year').touched && registerForm.get('year').invalid"><input type="text" class="loginInput" placeholder="Year" name='year' formControlName="year" required></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('language').touched && registerForm.get('language').invalid"><input type="text" class="loginInput" placeholder="Language" name='language' formControlName="language" required></span>
+           
+            <button class="loginButton2" type="submit" [disabled]="registerForm.invalid">ADD BOOK</button>
+        </div>
+        </form>
+    </div>
+</div>

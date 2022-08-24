@@ -1,0 +1,26 @@
+<div class="headerUpper" id="headerUpper">
+    <div class="headerUpperLogo">
+        <img src="assets/pacific_horizontal.png" class="logoHorizontal" (click)="preusmeri('user-main')">
+    </div>
+    <div class="headerUpperMain">
+        <div class="headerSearch">
+            <input type="text" class="search" name="search" id="search" placeholder="Search" (keyup)="preusmeri2($event,'pretraga')">
+            <svg xmlns="http://www.w3.org/2000/svg" class="searchIcon" viewBox="0 0 16 16" (click)="preusmeri('pretraga')" id="searchsvg"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg>
+        </div>
+        <div class="headerLogin2" (click)="preusmeri('user-profile')">
+            <img src="" id="userProfile" class="userProfile">
+        </div>
+        <div class="loginButton lb2" onmouseover="document.getElementById('headerUpper').classList.add('headerAnimation')" onmouseout="document.getElementById('headerUpper').classList.remove('headerAnimation')" (click)="odjava()">Logout</div>				
+            
+    </div>
+</div>
+
+<div class="headerLower">
+    <span class="linksHolder" id="linksHolder">
+        <a class="headerLinks" (click)="preusmeri('borrowed-books')"><span class="linija"></span><span>Borrowed books</span></a>
+        <a class="headerLinks" (click)="preusmeri('borrow-history')"><span class="linija"></span><span>Borrow history</span></a>
+        <a *ngIf="userType!=3" class="headerLinks" (click)="preusmeri('book-request')"><span class="linija"></span><span>Book request</span></a>
+        <a *ngIf="userType==2" class="headerLinks" (click)="preusmeri('dodaj-knjigu')"><span class="linija"></span><span>Add book</span></a>
+        <a *ngIf="userType==2" class="headerLinks" (click)="preusmeri('book-requests')"><span class="linija"></span><span>Book requests</span></a>
+    </span>
+</div>

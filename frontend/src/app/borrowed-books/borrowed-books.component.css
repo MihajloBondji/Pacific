@@ -1,0 +1,121 @@
+
+.container{
+    padding-top: 3vw;
+    background: url(../../assets/whitebackground.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.bookCard{
+    display: inline-block;
+    flex-grow: 1;
+    width: 27%;
+    margin:3%;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+}
+
+.cover{
+    height:10vw;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+.cover:hover{
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+    filter:saturate(2);
+}
+
+.text{
+    height: 5vw;
+    width:80%;
+    margin: 1vw auto;
+    font-weight: bold;
+}
+
+.text-left{
+    display: inline-block;
+    width: 50%;
+    height: 10vw;
+}
+
+.text-right{
+    display: inline-block;
+    width: 50%;
+    height: 10vw;
+}
+
+.buttons{
+    width:80%;
+    height: 5vw;
+    margin:1vw auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.available{
+    color:green;
+}
+
+.notavailable{
+    color:red;
+}
+
+.loginButton2{
+    border-radius: 50px;
+    height:3vw;
+    width:40%;
+    background-color: #2F7998;
+    margin-top: 2vw;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0.45vw;
+    color:white;
+    border:none;
+    transition:border-color ease 0.3s,color ease 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginButton2:hover{
+    background-color: white;
+    color:#2F7998;
+    border:solid 0.2vw #2F7998;
+    padding:0.3vw;
+    -webkit-box-shadow: 0px 7px 21px -10px #4CA4C7; 
+    box-shadow: 0px 7px 21px -10px #4CA4C7;
+}
+
+.noBorrows{
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 20vh 0;
+}
+
+@media screen and (max-width:600px){
+    .bookCard{
+      width:94%;
+      height: 65vw;
+    }
+    .text{
+        height:20vw;
+        font-size: 4vw;
+    }
+    .cover{
+        height: 30vw;
+    }
+    .buttons{
+        height: 10vw;
+    }
+    .loginButton2{
+        height: 6vw;
+        font-size: 4vw;
+    }
+  }

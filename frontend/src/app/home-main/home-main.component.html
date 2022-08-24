@@ -1,0 +1,31 @@
+    <div class="slideshowContainer">
+        <div class="slideshow">
+            <div class="slideshowTitle">Bestsellers</div>
+            <span class="flexSlider">
+                <img src="" class="slideshowSlider" id="sliderImage">
+                <div class="slideshowText">
+                    <span id="title"></span><br>
+                    <span id="author"></span><br>
+                    <span id="year"></span><br>
+                </div>
+            </span>
+            <div class="sliderPicker">
+                <span id="pick0" class="pick" (click)="slideshow(0)">&#9679;</span>
+                <span id="pick1" class="pick" (click)="slideshow(1)">&#9675;</span>
+                <span id="pick2" class="pick" (click)="slideshow(2)">&#9675;</span>
+            </div>
+        </div>
+        <div class="slideshowRight">
+            <img src="assets/slideshowright.png" class="slideshowRightImage">
+        </div>
+        <div class="explore" (click)="preusmeri('pretraga')">Explore more!</div>
+    </div>
+    <div class="quote">
+        <span>
+            <span class="quoteText">A writer only</span>
+            <span class="quoteText" style="animation-delay: 1.5s;">begins a book.</span>
+            <span class="quoteText" style="animation-delay: 3s;">A reader</span>
+            <span class="quoteText" style="animation-delay: 4.5s;">finishes it.</span>
+            <span class="quoterText"><span class="quoter">-SAMUEL JOHNSON</span></span>
+        </span>
+    </div>

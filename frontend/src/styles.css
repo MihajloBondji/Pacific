@@ -1,0 +1,493 @@
+@font-face {
+    font-family: oswald;
+    src: url("assets/fonts/oswald.ttf");
+}
+@font-face {
+    font-family: poppins;
+    src: url("assets/fonts/poppins.ttf");
+}
+@font-face {
+    font-family: comfortaa;
+    src: url("assets/fonts/comfortaa.ttf");
+}
+@font-face {
+    font-family: montserrat;
+    src: url("assets/fonts/montserrat.ttf");
+}
+@font-face {
+    font-family: gothic;
+    src: url("assets/fonts/gothic.TTF");
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+}
+
+body{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x:hidden;
+    background-color:white;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:visited{
+    color:inherit
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+.headerUpper{
+    min-height:5vw;
+    height:5vw;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 0;
+    background:white;
+    font-family:gothic;
+    overflow:hidden;
+    margin:0;
+    z-index:100;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headerAnimation{
+    animation:ease dots 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dots{
+    from{
+        background-image: radial-gradient(circle, #87dbff 10%, transparent 10%), radial-gradient(circle, #87dbff 10%, transparent 10%);
+        background-size: 3px 3px;
+        background-position: 0 0, 500px 500px;}
+    to{
+        background-image: radial-gradient(circle, #87dbff 10%, transparent 10%), radial-gradient(circle, #87dbff 10%, transparent 10%);
+        background-size: 40px 40px;
+        background-position: 0 0, 500px 500px;}
+}
+
+.headerLower{
+    height:1vw;
+    position:fixed;
+    top:5vw;
+    left:0;
+    width:100%;
+    background:#2F7998;
+    font-family:montserrat;
+    text-align:center;
+    overflow:hidden;
+    margin:0;
+    z-index:100;
+}
+
+.headerUpperLogo{
+    position: relative;
+    display: inline-block;
+    margin:0.5vw 1vw;
+    height:4vw;
+    width:12vw;
+}
+
+.logoHorizontal{
+    height:100%;
+    cursor: pointer;
+}
+
+.headerUpperMain{
+    position: relative;
+    display: flex;
+    justify-content:flex-end;
+    width:83vw;
+    margin: 0 1vw;
+    height: 100%;
+}
+
+.headerLogin{
+    width:15vw;
+    display: inline-block;
+    height:100%;
+}
+
+.loginButton{
+    border-radius: 50px;
+    height:3vw;
+    margin:1vw;
+    background-color: #2F7998;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1vw;
+    padding: 0.75vw 0;
+    color:white;
+    font-weight: bold;
+    transition:border-color ease 0.3s,color ease 0.3s;
+    cursor: pointer;
+}
+
+.loginButton:hover{
+    background-color: white;
+    color:#2F7998;
+    border:solid 0.2vw #2F7998;
+    padding:0.55vw;
+}
+
+.headerSearch{
+    width:66vw;
+    display: flex;
+    height:100%;
+    justify-content: center;
+}
+
+.search{
+    position: relative;
+    margin:1.5vw 0;
+    padding:0 0.5vw;
+    height:2vw;
+    min-width:20%;
+    width:30%;
+    outline: none;
+    border:solid #aaa 0.1vw;
+    border-radius: 50px;
+    transition:ease 0.2s;
+    font-family:gothic;
+    font-size: 1vw;
+}
+
+.search:hover{
+    border-color: #2F7998;
+}
+
+.search:focus{
+    border:solid #2F7998 0.2vw;
+    margin:1.4vw 0;
+}
+
+.searchIcon{
+    height: 1.5vw;
+    margin:1.75vw 0.5vw;
+    fill: #aaa;
+    cursor:pointer;
+}
+
+
+.main{
+	width:100%;
+	position:relative;
+	margin:6vw 0 0 0;
+	padding:0;
+	overflow:hidden;
+}
+
+.searchIcon:hover{
+    fill:#2F7998;
+}
+
+.slideshowContainer{
+    width:100%;
+    height:33vw;
+    background: url(assets/whitebackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slideshow{
+    width:60%;
+    height:100%;
+}
+
+.slideshowRight{
+    width:30%;
+    height:100%;
+}
+
+.slideshowRightImage{
+    height: 70%;
+    margin: 15% auto;
+}
+
+.slideshowTitle{
+    position: relative;
+    width:100%;
+    font-size: 4vw;
+    color:#2F7998;
+    font-weight: bold;
+    font-family: gothic;
+    text-align: center;
+    margin: 2vw 0;
+}
+
+.flexSlider{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshowSlider{
+    position: relative;
+    width:auto;
+    max-width: 60%;
+    height: 20vw;
+    margin-right: 5%;
+    -webkit-box-shadow: 0px 14px 21px -13px #aaa; 
+    box-shadow: 0px 14px 21px -13px #aaa;
+}
+
+.slideshowText{
+    position: relative;
+    width:auto;
+    max-width: 40%;
+    margin-left: 5%;
+    height: 20vw;
+    font-family: montserrat;
+    font-size: 2vw;
+}
+
+.availability{
+    color:greenyellow;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #444444;
+}
+
+.sliderPicker{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+    display: flex;
+    justify-content:center;
+    color:#2F7998;
+}
+
+.pick{
+    margin:0 0.5vw;
+    cursor:pointer;
+    font-size: 2vw;
+    font-family: monospace;
+}
+
+.pick:hover{
+    color:#003146;
+    font-weight: bold;
+}
+
+.footer{
+	width:100%;
+	position:relative;
+	margin:0;
+	padding:1vw;
+	height:10vw;
+	overflow:hidden;
+    background-color: white;
+    border-top:solid 0.2vw #2F7998;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    font-family: montserrat;
+    color:#2F7998;
+    align-items:stretch;
+    line-height: 2em;
+}
+
+.footerLogo{
+    height: 100%;
+}
+
+.quote{
+    width:100%;
+    padding: 0 25%;
+    height:auto;
+    font-size: 4vw;
+    font-family: poppins;
+    color:#003146;
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+}
+
+.quoter{
+    font-size: 2vw;
+    font-style: italic;
+    float: right;
+    margin-top: 1vw;
+}
+
+.explore{
+    position: absolute;
+    top:31vw;
+    left:40vw;
+    width:20vw;
+    height: 5vw;
+    padding: 1vw;
+    background-color: white;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 2vw;
+    color: #2F7998;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 25px -13px #333333; 
+    box-shadow: 0px 3px 25px -13px #333333;
+    transition: box-shadow ease 0.2s,color ease 0.2s;
+}
+
+.quoteText{
+    display: block;
+    width:0;
+    overflow: hidden;
+    border-right:none;
+    white-space: nowrap;
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .2s step-end infinite;
+    animation-fill-mode: forwards;
+}
+
+.quoterText{
+    opacity: 0;
+    animation: typing2 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+  
+  @keyframes typing {
+    0% { width: 0;border-right: .15em solid #2F7998; }
+    99% { width: 100%;border-right: .15em solid #2F7998; }
+    100%{ width: 100%;border-right:none;}
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2F7998; }
+  }
+
+  @keyframes typing2 {
+    0% { opacity: 0; }
+    100%{ opacity: 100%;}
+  }
+  
+
+.explore:hover{
+    color:#4CA4C7;
+    -webkit-box-shadow: 0px 3px 25px -9px #87dbff; 
+    box-shadow: 0px 3px 25px -9px #87dbff;
+}
+
+.curpoint{
+    cursor: pointer;
+}
+
+.curpoint:hover{
+    filter: saturate(2);
+}
+
+.logoHorizontal:hover{
+    filter: saturate(2);
+}
+
+@media screen and (max-width:600px){
+    .headerUpper{
+        height:10vw;
+    }
+    .headerLower{
+        top:10vw;
+    }
+    .main{
+        margin-top:11vw;
+    }
+    .headerUpperLogo{
+        height:9vw;
+    }
+    .search{
+        height:6vw;
+        width:60%;
+        font-size: 3vw;
+    }
+    .headerSearch{
+        width:50%;
+    }
+
+    .searchIcon{
+        height:5.5vw;
+    }
+
+    .headerLogin{
+        width: 40%;
+    }
+
+    .loginButton{
+        height: 8vw;
+        font-size: 3vw;
+        padding: 2vw;
+    }
+
+    .slideshowContainer{
+        height:66vw;
+    }
+
+    .slideshowSlider{
+        height: 40vw;
+    }
+
+    .slideshow{
+        width:100%;
+    }
+
+    .slideshowRight{
+        display: none;
+    }
+
+    .slideshowText{
+        font-size: 5vw;
+    }
+
+    .sliderPicker{
+        font-size: 4vw;
+    }
+
+    .pick{
+        font-size: 6vw;
+    }
+
+    .quote{
+        font-size: 10vw;
+        padding-top: 10vw;
+    }
+    .quoter{
+        font-size: 7vw;
+    }
+    .explore{
+        top:62vw;
+        left:30vw;
+        width:40vw;
+        font-size: 4vw;
+        height: 10vw;
+    }
+
+}

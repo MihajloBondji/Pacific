@@ -1,0 +1,101 @@
+
+.booksTable {
+    margin: 3vw;
+}
+
+table {
+    display: inline-table;
+    width: 94vw;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1vw;
+}
+
+th {
+    padding: 0.5vw;
+    text-align: left;
+    font-family: poppins;
+}
+
+.tabhead {
+    background-color:#2F7998;
+    color: white;
+}
+
+tr {
+    border-bottom: solid 1px #ddd;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputType{
+    width:2vw;
+    text-align: center;
+}
+.check{
+    cursor: pointer;
+    fill:#2F7998;
+}
+.check:hover{
+    fill:green;
+}
+.trash{
+    cursor: pointer;
+    fill:black;
+}
+.trash:hover{
+    fill:red;
+}
+
+.bookCover{
+    height: 4vw;
+    max-height: 100px;
+}
+.loginButton2{
+    border-radius: 50px;
+    height:3vw;
+    width:10vw;
+    background-color: #2F7998;
+    margin-top: 2vw;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0.4vw;
+    color:white;
+    border:none;
+    transition:border-color ease 0.3s,color ease 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginButton2:hover{
+    background-color: white;
+    color:#2F7998;
+    border:solid 0.2vw #2F7998;
+    padding:0.2vw;
+    -webkit-box-shadow: 0px 7px 21px -10px #4CA4C7; 
+    box-shadow: 0px 7px 21px -10px #4CA4C7;
+}
+
+.editInput{
+    outline: none;
+    border:none;
+    width:5vw;
+    font-size: 2vw;
+    color:#2F7998;
+    font-family: montserrat;
+    text-align: left;
+    border-bottom: solid #2F7998 0.15vw;
+    text-align: center;
+}
+
+.daysHolder{
+    width:100%;
+    text-align: center;
+}
+

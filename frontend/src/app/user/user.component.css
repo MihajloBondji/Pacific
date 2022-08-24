@@ -1,0 +1,8 @@
+.main{
+    margin-top: 8vw;
+}
+@media screen and (max-width:600px){
+  .main{
+	margin-top: 14vw;
+  }
+}

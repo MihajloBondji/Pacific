@@ -1,0 +1,28 @@
+
+<table class="booksTable">
+    <tr class="tabhead">
+        <th>Cover</th>
+        <th (click)="sort('title')" class="forhover2">Title</th>
+        <th (click)="sort('author')" class="forhover2">Authors</th>
+        <th (click)="sort('datetake')" class="forhover2">Date taken</th>
+        <th (click)="sort('dateback')" class="forhover2">Return date</th>
+    </tr>
+    <tbody>
+        <tr *ngFor='let u of allBorrows | slice: (page1-1) * 10 : (page1-1) * 10 + 10' class="forhover" (click)="preusmeri('user/book-page',u.bookId)">
+            <th><img src="../../assets/books/{{u.cover}}" class="bookCover"></th>
+            <th>{{u.title}}</th>
+            <th>{{u.author}}</th>
+            <th>{{convert(u.dateTake)}}</th>
+            <th>{{convert(u.dateBack)}}</th>
+        </tr>
+
+        <tr>
+            <th colspan="5" style="text-align:center">
+                <span class="center">
+                <ngb-pagination [(page)]="page1" [pageSize]="10" [collectionSize]="allBorrows.length">
+                </ngb-pagination>
+                </span>
+            </th>
+        </tr>
+    </tbody>
+</table>

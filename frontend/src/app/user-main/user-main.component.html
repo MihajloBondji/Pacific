@@ -1,0 +1,24 @@
+<div class="slideshowContainer">
+        <div class="slideshow2">
+            <div class="slideshowTitle">Book of the day</div>
+            <span class="flexSlider">
+                <img src="" class="knjiga" id="knjiga">
+                <div class="slideshowText">
+                    <span id="title"></span><br>
+                    <span id="author"></span><br>
+                    <span id="score" class="score">No score</span><br>
+                    <span id="score2" class="score2"></span>
+                </div>
+            </span>
+        </div>
+    </div>
+    
+    <div class="container3">
+        <div *ngIf="allNotifications.length==0">You have no notifications.</div>
+        <div class="bookCard" *ngFor='let u of allNotifications'>
+            <div class="text2">
+                {{u}}
+                <br><span style="font-size:2em;color:red">!</span>
+            </div>
+        </div>
+    </div>

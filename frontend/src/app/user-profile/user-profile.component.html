@@ -1,0 +1,67 @@
+<div class="main2">
+    <div class="userContainer">
+        <div class="loginMain">
+        <form [formGroup]="changeinfoForm" (ngSubmit)="changeInfo()" style="width: 100%;text-align: center;">
+            <span>
+                <label for="file-input">
+                    <img src="../../assets/profilePhotos/{{photo}}" class="profilepic curpoint" id="profilePhoto">
+                </label>
+            
+                <input id="file-input" #fileInput type="file" (change)="onFileUpload()" style="display:none"/>
+            </span>
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('username').touched && changeinfoForm.get('username').invalid"><input type="text" class="loginInput" name='username' formControlName="username" id="username" (change)="findUsername()" ngDefaultControl><img src="../../assets/miniprofile.svg" class="miniProfile"></span>
+
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('fullname').touched && changeinfoForm.get('fullname').invalid"><input type="text" class="loginInput" placeholder="Full name" name='fullname' formControlName="fullname" ngDefaultControl><img src="../../assets/FULLNAME.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('address').touched && changeinfoForm.get('address').invalid"><input type="text" class="loginInput" placeholder="Address" name='address' formControlName="address" ngDefaultControl><img src="../../assets/address.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('phone').touched && changeinfoForm.get('phone').invalid"><input type="tel" class="loginInput" placeholder="Phone" name='phone' formControlName="phone" ngDefaultControl><img src="../../assets/phone.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('mail').touched && changeinfoForm.get('mail').invalid"><input type="email" class="loginInput" placeholder="Email" name='mail' formControlName="mail" (change)="findMail()" ngDefaultControl><img src="../../assets/mail.svg" class="miniProfile"></span>
+           
+            <span class="message">{{messageUser}}</span><br>
+            <span class="message">{{messageMail}}</span><br>
+            <button class="loginButton2" type="submit" [disabled]="fileuploading||changeinfoForm.invalid||messageUser!=''||messageMail!=''">Update info</button>
+        </form>
+
+    <form [formGroup]="changepassForm" (ngSubmit)="changePass()" style="width: 100%;text-align: center;margin-top: 2vw;">
+        <span class="inputSpan" [class.invalid]="changepassForm.get('oldPassword').touched && changepassForm.get('oldPassword').invalid">
+            <input type="password" class="loginInput" placeholder="Old password" name="oldPassword" formControlName="oldPassword" required>
+            <img src="../../assets/key.svg" class="miniProfile">
+        </span>
+        <span class="inputSpan" [class.invalid]="changepassForm.get('password').touched && changepassForm.get('password').invalid">
+            <input type="password" class="loginInput" placeholder="New password" name="password" formControlName="password" (change)="passcheck()" required>
+            <img src="../../assets/key.svg" class="miniProfile">
+        </span>
+        <span class="inputSpan" [class.invalid]="changepassForm.get('confirmPassword').touched && changepassForm.get('confirmPassword').invalid">
+            <input type="password" class="loginInput" placeholder="Confirm password" name="confirmPassword" (change)="passcheck()" formControlName="confirmPassword" required>
+            <img src="../../assets/key.svg" class="miniProfile">
+        </span>
+        <button class="loginButton2" type="submit" [disabled]="changepassForm.invalid||message!=''">Change password</button><br>
+        <span class="message">{{message}}</span>
+        
+    </form>
+    </div>
+    </div>
+    <div class="userContainer2">
+        <div class="titleGraph">Book borrows per month</div>
+        <div class="graph1">
+            <span class="bar" [ngStyle]="{'height':(calc(months[0]))}">{{months[0]}}<br>{{calcMonth(0)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[1]))}">{{months[1]}}<br>{{calcMonth(1)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[2]))}">{{months[2]}}<br>{{calcMonth(2)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[3]))}">{{months[3]}}<br>{{calcMonth(3)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[4]))}">{{months[4]}}<br>{{calcMonth(4)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[5]))}">{{months[5]}}<br>{{calcMonth(5)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[6]))}">{{months[6]}}<br>{{calcMonth(6)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[7]))}">{{months[7]}}<br>{{calcMonth(7)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[8]))}">{{months[8]}}<br>{{calcMonth(8)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[9]))}">{{months[9]}}<br>{{calcMonth(9)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[10]))}">{{months[10]}}<br>{{calcMonth(10)}}</span>
+            <span class="bar" [ngStyle]="{'height':(calc(months[11]))}">{{months[11]}}<br>{{calcMonth(11)}}</span>
+        </div>
+        <div class="titleGraph">Book borrows per genre</div>
+        <div class="graph1 graph2">
+            <span class="bar" [ngStyle]="{'height':calc3(calc2(g))}" *ngFor="let g of genres">{{calc2(g)}}<br>{{g}}</span>
+        </div>
+    </div>
+</div>

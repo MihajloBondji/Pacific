@@ -1,0 +1,98 @@
+
+.knjiga{
+    height:5vw;
+    max-height: 100px;
+}
+
+.slideshowTitle{
+    font-size: 3vw;
+}
+
+.slideshow2{
+    width:60%;
+}
+
+.slideshowText{
+    font-size: 1vw;
+    max-height:10vw;
+}
+
+.slideshowContainer{
+    height:20vw;
+}
+
+.score{
+    font-weight: bold;
+    color:rgb(255, 236, 63);
+    text-shadow: 1px 1px 3px #aaa;
+}
+
+.score2{
+    font-size: 2vw;
+    color:rgb(255, 236, 63);
+    font-family: gothic;
+    text-shadow: 1px 1px 3px #aaa;
+    font-weight: bold;
+}
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    width:80%;
+    margin-left: 10%;
+}
+
+
+.text2{
+    height: 5vw;
+    width:80%;
+    margin: 1vw auto;
+    text-align: center;
+}
+
+.bookCard{
+    display: inline-block;
+    width: 27%;
+    margin:3%;
+    height: 10vw;
+    text-align: center;
+    overflow: scroll;
+    word-wrap: break-word;
+    background-color: aliceblue;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width:600px){
+  .slideshowContainer{
+    margin-top: 10vw;
+  }
+  
+    .bookCard{
+      width:94%;
+      height: 65vw;
+    }
+    .text{
+        height:20vw;
+    }
+
+    .slideshowText{
+        font-size: 3vw;
+    }
+
+    .slideshowContainer{
+        margin-top: 0;
+        height: 50vw;
+    }
+
+    .slideshowTitle{
+        font-size: 6vw;
+    }
+  
+}

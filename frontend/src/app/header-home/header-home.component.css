@@ -1,0 +1,20 @@
+
+@media screen and (max-width:600px){
+    .headerLinks{
+      font-size: 2vw;
+    }
+    .headerLower{
+        height: 4vw;
+        padding: 1vw;
+    }
+
+
+    .lb2{
+        width: 20vw;
+    }
+
+    .userProfile{
+        width:6vw;
+        height: 6vw;
+    }
+  }

@@ -1,0 +1,46 @@
+<div class="main2">
+    <div class="userContainer">
+        <div class="loginMain">
+        <form [formGroup]="changeinfoForm" (ngSubmit)="changeInfo()" style="width: 100%;text-align: center;">
+            <span>
+                <label for="file-input">
+                    <img src="../../assets/profilePhotos/{{photo}}" class="profilepic curpoint" id="profilePhoto">
+                </label>
+            
+                <input id="file-input" #fileInput type="file" (change)="onFileUpload()" style="display:none"/>
+            </span>
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('username').touched && changeinfoForm.get('username').invalid"><input type="text" class="loginInput" name='username' formControlName="username" id="username" (change)="findUsername()" ngDefaultControl><img src="../../assets/miniprofile.svg" class="miniProfile"></span>
+
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('fullname').touched && changeinfoForm.get('fullname').invalid"><input type="text" class="loginInput" placeholder="Full name" name='fullname' formControlName="fullname" ngDefaultControl><img src="../../assets/FULLNAME.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('address').touched && changeinfoForm.get('address').invalid"><input type="text" class="loginInput" placeholder="Address" name='address' formControlName="address" ngDefaultControl><img src="../../assets/address.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('phone').touched && changeinfoForm.get('phone').invalid"><input type="tel" class="loginInput" placeholder="Phone" name='phone' formControlName="phone" ngDefaultControl><img src="../../assets/phone.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="changeinfoForm.get('mail').touched && changeinfoForm.get('mail').invalid"><input type="email" class="loginInput" placeholder="Email" name='mail' formControlName="mail" (change)="findMail()" ngDefaultControl><img src="../../assets/mail.svg" class="miniProfile"></span>
+           
+            <span class="message">{{messageUser}}</span><br>
+            <span class="message">{{messageMail}}</span><br>
+            <button class="loginButton2" type="submit" [disabled]="fileuploading||changeinfoForm.invalid||messageUser!=''||messageMail!=''">Update info</button>
+        </form>
+
+    <form [formGroup]="changepassForm" (ngSubmit)="changePass()" style="width: 100%;text-align: center;margin-top: 2vw;">
+        <span class="inputSpan" [class.invalid]="changepassForm.get('oldPassword').touched && changepassForm.get('oldPassword').invalid">
+            <input type="password" class="loginInput" placeholder="Old password" name="oldPassword" formControlName="oldPassword" required>
+            <img src="../../assets/key.svg" class="miniProfile">
+        </span>
+        <span class="inputSpan" [class.invalid]="changepassForm.get('password').touched && changepassForm.get('password').invalid">
+            <input type="password" class="loginInput" placeholder="New password" name="password" formControlName="password" (change)="passcheck()" required>
+            <img src="../../assets/key.svg" class="miniProfile">
+        </span>
+        <span class="inputSpan" [class.invalid]="changepassForm.get('confirmPassword').touched && changepassForm.get('confirmPassword').invalid">
+            <input type="password" class="loginInput" placeholder="Confirm password" name="confirmPassword" (change)="passcheck()" formControlName="confirmPassword" required>
+            <img src="../../assets/key.svg" class="miniProfile">
+        </span>
+        <button class="loginButton2" type="submit" [disabled]="changepassForm.invalid||message!=''">Change password</button><br>
+        <span class="message">{{message}}</span>
+        
+    </form>
+    </div>
+    </div>
+</div>

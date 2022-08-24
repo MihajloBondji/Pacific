@@ -1,0 +1,212 @@
+.main2{
+    min-height: 60vw;
+    background-color: aliceblue;
+}
+
+.userContainer{
+    position: absolute;
+    top:3vw;
+    left:5vw;
+    height:55vw;
+    width:40vw;
+    background-color: white;
+    border-radius: 1vw;
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+}
+
+.userContainer2{
+    position: absolute;
+    top:3vw;
+    left:50vw;
+    height:55vw;
+    width:45vw;
+    background-color: white;
+    border-radius: 1vw;
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+    text-align: center;
+}
+
+.message{
+    font-weight: bold;
+    color:red;
+    margin-top: 1vw;
+    font-size: 0.7vw;
+    font-family: montserrat;
+    line-height: 0.5em;
+}
+.profilepic{
+    height:6vw;
+    width: 6vw;
+    margin: 2vw 0;
+    border-radius: 50px;
+    border: solid #2F7998 .3vw;
+}
+
+.loginInput{
+    outline: none;
+    border:none;
+    width:80%;
+    height:2.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color:#2F7998;
+    font-family: montserrat;
+}
+
+.inputSpan{
+    width:60%;
+    margin: 0 auto;
+    height: auto;
+    text-align: left;
+    border-bottom: solid #2F7998 0.15vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputSpan:hover{
+    border-bottom:solid #4CA4C7 0.2vw;
+}
+
+.miniProfile{
+    height:1.3vw;
+    margin-right: 0.5vw;
+}
+
+.loginButton2{
+    border-radius: 50px;
+    height:auto;
+    width:60%;
+    background-color: #2F7998;
+    margin-top: 2vw;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    color:white;
+    border:none;
+    transition:border-color ease 0.3s,color ease 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginButton2:hover{
+    background-color: white;
+    color:#2F7998;
+    border:solid 0.2vw #2F7998;
+    padding:0.80vw;
+    -webkit-box-shadow: 0px 7px 21px -10px #4CA4C7; 
+    box-shadow: 0px 7px 21px -10px #4CA4C7;
+}
+
+.loginMain{
+    position: relative;
+    padding:0;
+    width:100%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.userInfo{
+    font-size: 1.5vw;
+    color:#2F7998;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.invalid{
+    border-color: red;
+}
+
+.titleGraph{
+    width:100%;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin: 3vw auto 0 auto;
+}
+
+.graph1{
+    width:35vw;
+    height:20vw;
+    margin:0 5vw;
+    border:solid 1px #AAAAAA;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: stretch;
+    align-items: flex-end;
+}
+
+.bar{
+    height:15vw;
+    flex: 1;
+    margin: 0.5vw;
+    background-color: #2F7998;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.main2{
+    min-height: 60vw;
+    background-color: aliceblue;
+}
+
+
+@media screen and (max-width:600px){
+.userContainer{
+    top:3vw;
+    left:3vw;
+    height:130vw;
+    width:94vw;
+}
+
+.userContainer2{
+    top:136vw;
+    left:3vw;
+    height:110vw;
+    width:94vw;
+}
+
+.main2{
+    min-height: 260vw;
+}
+
+
+.loginInput{
+    font-size: 4vw;
+    height: 6vw;
+}
+
+.miniProfile{
+    height:4vw;
+}
+
+.loginButton2{
+    font-size: 4vw;
+}
+
+.profilepic{
+    height: 15vw;
+    width: 15vw;
+}
+
+.graph1{
+    width:84vw;
+}
+
+.titleGraph{
+    font-size: 4vw;
+}
+
+.bar{
+    font-size: 2vw;
+}
+
+}

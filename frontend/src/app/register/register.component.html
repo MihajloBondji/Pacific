@@ -1,0 +1,37 @@
+<div class="mainLogin">
+    <div class="loginContainer registerContainer">
+        <div class="loginTitle">REGISTER</div>
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="loginMain">
+            <span>
+                <label for="file-input">
+                    <img src="../../assets/profilepic2.png" class="profilepic curpoint" id="profilePhoto">
+                </label>
+            
+                <input id="file-input" #fileInput type="file" (change)="onFileUpload()" style="display:none"/>
+            </span>
+            <span class="inputSpan" [class.invalid]="registerForm.get('username').touched && registerForm.get('username').invalid"><input type="text" class="loginInput" placeholder="Username" name='username' formControlName="username" id="username" (change)="findUsername()" required><img src="../../assets/miniprofile.svg" class="miniProfile"></span>
+
+            <span class="inputSpan" [class.invalid]="registerForm.get('password').touched && registerForm.get('password').invalid"><input type="password" class="loginInput" placeholder="Password" name='password' formControlName="password" (change)="passcheck()" required><img src="../../assets/key.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('confirmPassword').touched && registerForm.get('confirmPassword').invalid"><input type="password" class="loginInput" placeholder="Confirm password" name='confirmPassword' (change)="passcheck()" formControlName="confirmPassword" required><img src="../../assets/key.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('fullname').touched && registerForm.get('fullname').invalid"><input type="text" class="loginInput" placeholder="Full name" name='fullname' formControlName="fullname" required><img src="../../assets/FULLNAME.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('address').touched && registerForm.get('address').invalid"><input type="text" class="loginInput" placeholder="Address" name='address' formControlName="address" required><img src="../../assets/address.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('phone').touched && registerForm.get('phone').invalid"><input type="tel" class="loginInput" placeholder="Phone" name='phone' formControlName="phone" required><img src="../../assets/phone.svg" class="miniProfile"></span>
+            
+            <span class="inputSpan" [class.invalid]="registerForm.get('mail').touched && registerForm.get('mail').invalid"><input type="email" class="loginInput" placeholder="Email" name='mail' formControlName="mail" (change)="findMail()" required><img src="../../assets/mail.svg" class="miniProfile"></span>
+           
+            <span class="message">{{messageUser}}</span>
+            <span class="message">{{message}}</span>
+            <span class="message">{{messageMail}}</span>
+            <button class="loginButton2" type="submit" [disabled]="registerForm.invalid||messageUser!=''||message!=''||messageMail!=''">SIGN UP</button>
+            <a routerLink="/login" class="registerButton">Already have an account?<br>Log in here</a>
+        </div>
+        </form>
+    </div>
+</div>
+
+<app-header-blank></app-header-blank>

@@ -1,0 +1,180 @@
+.main{
+    min-height: 50vh;
+}
+
+.container{
+    padding-top: 3vw;
+    display: flex;
+    justify-content:center;
+    background: url(../../assets/whitebackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.loginButton2{
+    border-radius: 50px;
+    height:3vw;
+    width:40%;
+    background-color: #2F7998;
+    margin-top: 2vw;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0.4vw;
+    color:white;
+    border:none;
+    transition:border-color ease 0.3s,color ease 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginButton2:hover{
+    background-color: white;
+    color:#2F7998;
+    border:solid 0.2vw #2F7998;
+    padding:0.2vw;
+    -webkit-box-shadow: 0px 7px 21px -10px #4CA4C7; 
+    box-shadow: 0px 7px 21px -10px #4CA4C7;
+}
+
+.knjiga{
+    max-height: 480px;
+    max-height: 300px;
+}
+
+.slideshowTitle{
+    font-size: 3vw;
+}
+
+.slideshowText{
+    font-size: 1.6vw;
+}
+
+.score{
+    font-weight: bold;
+    color:rgb(255, 236, 63);
+    text-shadow: 1px 1px 3px #aaa;
+}
+
+
+.score2{
+    color:rgb(255, 236, 63);
+    font-family: gothic;
+    text-shadow: 1px 1px 3px #aaa;
+    font-weight: bold;
+}
+
+.available{
+    font-size: 1.6vw;
+    color:rgb(0, 135, 0);
+    text-shadow: 1px 1px 3px #aaa;
+}
+
+.notAvailable{
+    font-size: 1.6vw;
+    color:rgb(135, 0, 0);
+    text-shadow: 1px 1px 3px #aaa;
+}
+
+.right{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.text{
+    height: 5vw;
+    width:80%;
+    margin: 1vw auto;
+    font-weight: bold;
+}
+
+.bookCard{
+    display: inline-block;
+    width: 27%;
+    margin:3%;
+    height: 15vw;
+    overflow: scroll;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    -webkit-box-shadow: 8px 8px 26px -10px #AAAAAA; 
+    box-shadow: 8px 8px 26px -10px #AAAAAA;
+}
+
+.scoreInput{
+    outline: none;
+    border:none;
+    width:3vw;
+    height:2.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color:#2F7998;
+    font-family: montserrat;
+    text-align: left;
+    border-bottom: solid #2F7998 0.15vw;
+}
+
+.editInput{
+    outline: none;
+    border:none;
+    color:#2F7998;
+    font-family: montserrat;
+    text-align: left;
+    border-bottom: solid #2F7998 0.15vw;
+}
+
+.textInput{
+    border:solid 1px #aaa;
+    width:80%;
+    height:6vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color:#2F7998;
+    font-family: montserrat;
+    text-align: left;
+    border-bottom: solid #2F7998 0.15vw;
+}
+
+.con2{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    width:80%;
+    margin-left: 10%;
+}
+
+
+.text2{
+    height: 5vw;
+    width:80%;
+    margin: 1vw auto;
+    text-align: left;
+}
+
+.user{
+    font-weight: bold;
+}
+
+.date{
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+    margin-top: 2vw;
+}
+
+.curpoint{
+    cursor: pointer;
+}
+
+.curpoint:hover{
+    filter: saturate(2);
+}
