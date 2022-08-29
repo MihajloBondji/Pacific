@@ -1,0 +1,310 @@
+[{
+  "_id": {
+    "$oid": "630d17c06c61361491acf7f4"
+  },
+  "id": {
+    "$numberLong": "1661802432593"
+  },
+  "title": "The art of motorcycle",
+  "author": [
+    "Johnny Rashford"
+  ],
+  "genre": [
+    "Thriller"
+  ],
+  "publisher": "Laguna",
+  "year": 1990,
+  "language": "English",
+  "cover": "1661802361966.jpeg",
+  "score": [
+    18,
+    2
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d17fa6c61361491acf7f6"
+  },
+  "id": {
+    "$numberLong": "1661802490191"
+  },
+  "title": "Elanor's Notebook",
+  "author": [
+    "Elanor"
+  ],
+  "genre": [
+    "Romance",
+    " Memoir"
+  ],
+  "publisher": "Delfi",
+  "year": 2020,
+  "language": "French",
+  "cover": "1661802437147.jpeg",
+  "score": [
+    18,
+    2
+  ],
+  "reservations": [],
+  "count": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d18426c61361491acf7f8"
+  },
+  "id": {
+    "$numberLong": "1661802562244"
+  },
+  "title": "Past Years",
+  "author": [
+    "Adeline Palmerston"
+  ],
+  "genre": [
+    "Paranormal",
+    "Mystery"
+  ],
+  "publisher": "Vulkan",
+  "year": 2004,
+  "language": "English",
+  "cover": "1661802494914.jpeg",
+  "score": [
+    7,
+    1
+  ],
+  "reservations": [],
+  "count": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d18736c61361491acf7fa"
+  },
+  "id": {
+    "$numberLong": "1661802611138"
+  },
+  "title": "Our last summer",
+  "author": [
+    "Claudia Wilson"
+  ],
+  "genre": [
+    "Novel",
+    "Art"
+  ],
+  "publisher": "Delfi",
+  "year": 2022,
+  "language": "Serbian",
+  "cover": "1661802569650.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d18a16c61361491acf7fc"
+  },
+  "id": {
+    "$numberLong": "1661802657952"
+  },
+  "title": "Golden hour",
+  "author": [
+    "Adora Montminy"
+  ],
+  "genre": [
+    "Motivational"
+  ],
+  "publisher": "Laguna",
+  "year": 2006,
+  "language": "English",
+  "cover": "1661802617647.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d18ee6c61361491acf7fe"
+  },
+  "id": {
+    "$numberLong": "1661802734131"
+  },
+  "title": "Home",
+  "author": [
+    "Olivia Wilson",
+    "John Wilson"
+  ],
+  "genre": [
+    "Contemporary",
+    "Guide/How-to"
+  ],
+  "publisher": "Vulkan",
+  "year": 2019,
+  "language": "English",
+  "cover": "1661802677680.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d19246c61361491acf800"
+  },
+  "id": {
+    "$numberLong": "1661802788701"
+  },
+  "title": "Bedtime story",
+  "author": [
+    "Sacha Dubois"
+  ],
+  "genre": [
+    "Lullaby"
+  ],
+  "publisher": "Delfi",
+  "year": 2020,
+  "language": "French",
+  "cover": "1661802752079.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d19646c61361491acf802"
+  },
+  "id": {
+    "$numberLong": "1661802852317"
+  },
+  "title": "Crocodile: The journey",
+  "author": [
+    "Henrietta Mitchell"
+  ],
+  "genre": [
+    "Children’s"
+  ],
+  "publisher": "Laguna",
+  "year": 2004,
+  "language": "Serbian",
+  "cover": "1661802793395.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d19886c61361491acf804"
+  },
+  "id": {
+    "$numberLong": "1661802888234"
+  },
+  "title": "Be gone",
+  "author": [
+    "Yanis Petros"
+  ],
+  "genre": [
+    "Novel",
+    "Romance"
+  ],
+  "publisher": "Vulkan",
+  "year": 2009,
+  "language": "English",
+  "cover": "1661802858591.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d19ad6c61361491acf806"
+  },
+  "id": {
+    "$numberLong": "1661802925666"
+  },
+  "title": "Template",
+  "author": [
+    "No authors"
+  ],
+  "genre": [
+    "No genres"
+  ],
+  "publisher": "No publisher",
+  "year": 2022,
+  "language": "No language",
+  "cover": "template.jpg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d19ea6c61361491acf808"
+  },
+  "id": {
+    "$numberLong": "1661802986827"
+  },
+  "title": "Two side",
+  "author": [
+    "Pedro Fernandes"
+  ],
+  "genre": [
+    "Adventure",
+    "Science Fiction"
+  ],
+  "publisher": "Delfi",
+  "year": 2021,
+  "language": "English",
+  "cover": "1661802943807.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1bc96c61361491acf89f"
+  },
+  "id": {
+    "$numberLong": "1661803465119"
+  },
+  "title": "Dancing in the dark",
+  "author": [
+    "Donna Stroupe"
+  ],
+  "genre": [
+    "Art",
+    "Paranormal"
+  ],
+  "publisher": "Ingoude",
+  "year": 2003,
+  "language": "English",
+  "cover": "1661803407426.jpeg",
+  "score": [
+    0,
+    0
+  ],
+  "reservations": [],
+  "count": 1,
+  "username": "citalac1",
+  "__v": 0
+}]

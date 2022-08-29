@@ -102,6 +102,7 @@ export class BookPageComponent implements OnInit {
         for(let i=0;i<score;i++)
         sco2.innerHTML+="&#9734;";
       }
+      this.canreserve=1;
       for(let r of this.knjiga.reservations)
         if(r==this.user.username)
         this.canreserve=0;

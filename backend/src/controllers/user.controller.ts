@@ -53,7 +53,7 @@ export class UserController{
             phone: req.body.phone,
             mail: req.body.mail,
             photo: req.body.photo,
-            type: 0
+            type: req.body.type
         })
        
         user.save((err,user)=>{

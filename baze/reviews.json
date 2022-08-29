@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "630d1c156c61361491acf8d7"
+  },
+  "id": {
+    "$numberLong": "1661803541240"
+  },
+  "bookId": {
+    "$numberLong": "1661802432593"
+  },
+  "score": 10,
+  "text": "Great!",
+  "user": "citalac1",
+  "date": {
+    "$numberLong": "1661803546949"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1c286c61361491acf8ea"
+  },
+  "id": {
+    "$numberLong": "1661803560396"
+  },
+  "bookId": {
+    "$numberLong": "1661802490191"
+  },
+  "score": 8,
+  "text": "Fine book",
+  "user": "citalac1",
+  "date": {
+    "$numberLong": "1661803560396"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1c426c61361491acf8fa"
+  },
+  "id": {
+    "$numberLong": "1661803586400"
+  },
+  "bookId": {
+    "$numberLong": "1661802562244"
+  },
+  "score": 7,
+  "text": "Interesting book",
+  "user": "citalac1",
+  "date": {
+    "$numberLong": "1661803586400"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1c696c61361491acf918"
+  },
+  "id": {
+    "$numberLong": "1661803625887"
+  },
+  "bookId": {
+    "$numberLong": "1661802432593"
+  },
+  "score": 8,
+  "text": "ok",
+  "user": "moderator",
+  "date": {
+    "$numberLong": "1661803625887"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1f956c61361491acf9a3"
+  },
+  "id": {
+    "$numberLong": "1661804437600"
+  },
+  "bookId": {
+    "$numberLong": "1661802490191"
+  },
+  "score": 10,
+  "text": "nice",
+  "user": "moderator",
+  "date": {
+    "$numberLong": "1661804437600"
+  },
+  "__v": 0
+}]

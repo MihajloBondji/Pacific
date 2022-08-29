@@ -37,7 +37,7 @@
             <button *ngIf="(userType==2||userType==10)&&edit==0" class="loginButton2" (click)='editThis()'>Edit</button>
             <button *ngIf="(userType==2||userType==10)&&edit==1" class="loginButton2" (click)='saveThis()'>Save</button><br>
             <button *ngIf="available>0&&buttonEnable" class="loginButton2" (click)='getit()'>Get it!</button>
-            <button *ngIf="available==0&&buttonEnable" class="loginButton2" (click)='reserveit()'>Reserve it!</button>
+            <button *ngIf="available==0&&buttonEnable&&canreserve==1" class="loginButton2" (click)='reserveit()'>Reserve it!</button>
         </div>
     </div>
 

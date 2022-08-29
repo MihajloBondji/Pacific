@@ -1,0 +1,129 @@
+[{
+  "_id": {
+    "$oid": "630d1a286c61361491acf838"
+  },
+  "id": {
+    "$numberLong": "1661803048255"
+  },
+  "bookId": {
+    "$numberLong": "1661802432593"
+  },
+  "user": "citalac1",
+  "cover": "1661802361966.jpeg",
+  "title": "The art of motorcycle",
+  "author": [
+    "Johnny Rashford"
+  ],
+  "genre": [
+    "Thriller"
+  ],
+  "extend": 0,
+  "dateTake": {
+    "$numberLong": "1661803048255"
+  },
+  "dateBack": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1a306c61361491acf846"
+  },
+  "id": {
+    "$numberLong": "1661803056913"
+  },
+  "bookId": {
+    "$numberLong": "1661802490191"
+  },
+  "user": "citalac1",
+  "cover": "1661802437147.jpeg",
+  "title": "Elanor's Notebook",
+  "author": [
+    "Elanor"
+  ],
+  "genre": [
+    "Romance",
+    " Memoir"
+  ],
+  "extend": 0,
+  "dateTake": {
+    "$numberLong": "1660903056913"
+  },
+  "dateBack": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1a396c61361491acf854"
+  },
+  "id": {
+    "$numberLong": "1661803065430"
+  },
+  "bookId": {
+    "$numberLong": "1661802562244"
+  },
+  "user": "citalac1",
+  "cover": "1661802494914.jpeg",
+  "title": "Past Years",
+  "author": [
+    "Adeline Palmerston"
+  ],
+  "genre": [
+    "Paranormal",
+    "Mystery"
+  ],
+  "extend": 0,
+  "dateTake": {
+    "$numberLong": "1659803065430"
+  },
+  "dateBack": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1bdb6c61361491acf8b2"
+  },
+  "id": {
+    "$numberLong": "1661803483911"
+  },
+  "bookId": {
+    "$numberLong": "1661802432593"
+  },
+  "user": "moderator",
+  "cover": "1661802361966.jpeg",
+  "title": "The art of motorcycle",
+  "author": [
+    "Johnny Rashford"
+  ],
+  "genre": [
+    "Thriller"
+  ],
+  "extend": 0,
+  "dateTake": {
+    "$numberLong": "1661803483911"
+  },
+  "dateBack": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1f8c6c61361491acf99a"
+  },
+  "id": {
+    "$numberLong": "1661804428404"
+  },
+  "bookId": {
+    "$numberLong": "1661802490191"
+  },
+  "user": "moderator",
+  "cover": "1661802437147.jpeg",
+  "title": "Elanor's Notebook",
+  "author": [
+    "Elanor"
+  ],
+  "genre": [
+    "Romance",
+    " Memoir"
+  ],
+  "extend": 0,
+  "dateTake": {
+    "$numberLong": "1661804443950"
+  },
+  "dateBack": 0,
+  "__v": 0
+}]

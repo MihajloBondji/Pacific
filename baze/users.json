@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "62f97239ec57119f8bde0c8a"
+  },
+  "username": "admin",
+  "password": "Admin123!",
+  "fullname": "administrator",
+  "address": "no street",
+  "phone": "123456789",
+  "mail": "admin@admin.com",
+  "type": 10,
+  "__v": 0,
+  "photo": "profilepic.png"
+},{
+  "_id": {
+    "$oid": "630d14f3228be2f76227c224"
+  },
+  "username": "citalac1",
+  "password": "Test123!",
+  "fullname": "Pera Peric",
+  "address": "Kosovska 120",
+  "phone": "+38166554432",
+  "mail": "peraperic@gmail.com",
+  "photo": "1661801672170.jpeg",
+  "type": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d152c228be2f76227c22c"
+  },
+  "username": "citalac2",
+  "password": "Test123!",
+  "fullname": "Mika Mikic",
+  "address": "Novosadska 53",
+  "phone": "0605458781",
+  "mail": "mikamikic@yahoo.com",
+  "photo": "1661801723031.jpeg",
+  "type": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d1561228be2f76227c232"
+  },
+  "username": "moderator",
+  "password": "Test123!",
+  "fullname": "Jana Janic",
+  "address": "Pazarska 78",
+  "phone": "06588955412",
+  "mail": "janajanic@gmail.com",
+  "photo": "1661801782235.jpeg",
+  "type": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d15e5228be2f76227c242"
+  },
+  "username": "citalac4",
+  "password": "Test123!",
+  "fullname": "Nikola Nikolic",
+  "address": "Krfska 15",
+  "phone": "0648856652",
+  "mail": "nikolanikolic@gmail.com",
+  "type": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d172e6c61361491acf7e7"
+  },
+  "username": "citalac3",
+  "password": "Test123!",
+  "fullname": "Jelica Jelic",
+  "address": "Kraljice Marije 17",
+  "phone": "0654478895",
+  "mail": "jelicajelic@gmail.com",
+  "photo": "1661802241200.jpeg",
+  "type": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "630d20216c61361491acf9d1"
+  },
+  "username": "citalac5",
+  "password": "Test123!",
+  "fullname": "Masa Masic",
+  "address": "Masinska 15",
+  "phone": "0652235547",
+  "mail": "masamasic@gmail.com",
+  "photo": "1661804544998.jpeg",
+  "type": 0,
+  "__v": 0
+}]
